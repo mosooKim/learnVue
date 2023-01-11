@@ -18,7 +18,9 @@ const routes = [
   {
     path: '/contact',
     name: 'Contact',
-    component: () => import(/* webpackChunkName: "contact" */ '../views/ContactView.vue')
+    // vue.config.js에 prefetch 삭제를 default값으로 해놔서 true로 변경
+    component: () => import(/* webpackChunkName: "contact", webpackPrefetch:true */ '../views/ContactView.vue')
+    //component: () => import(/* webpackChunkName: "contact" */ '../views/ContactView.vue')
   },
   {
     path: '/basic',

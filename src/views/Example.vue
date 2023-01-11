@@ -5,7 +5,7 @@
             <option value="21">부산</option>
             <option value="064">제주</option>
         </select> -->
-        
+
         <!-- <label><input type="checkbox" value="서울" v-model="checked">서울</label>
         <label><input type="checkbox" value="부산" v-model="checked">부산</label>
         <label><input type="checkbox" value="제주" v-model="checked">제주</label>
@@ -28,7 +28,7 @@ export default {
     components: {},
     data() {
         return {
-            city: "21", 
+            city: "21",
             checked: [],
             radio: ["서울","부산","제주"],
             radio1: "서울",
@@ -39,6 +39,7 @@ export default {
     },
     setup() {},
     create() {},
+    // mounted, methods에서 data에 접근하려면 this를 통해서 접근이 가능하다.
     mounted() {},
     unmounted() {},
     methods: {

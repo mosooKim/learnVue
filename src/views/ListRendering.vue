@@ -1,7 +1,7 @@
 <template>
     <div>
         <select v-model="city">
-            <option :value="city.v" :key="i" v-for="(city,i) in options">{{city.t}}</option>
+            <option :value="city.v" :key="i" v-for="(city,i) in  options">{{city.t}}</option>
         </select>
         <table>
             <thead>

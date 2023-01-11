@@ -1,7 +1,8 @@
 <template>
     <div>
+        <!-- v-on 대신 @를 써도 된다 -->
         <button type="button" v-on:click="increaseCounter">Add 1</button>
-        <button type="button" v-on:click="one(), two()">Alert</button>
+        <button type="button" @click="one(), two()">Alert</button>
         <p>The count is : {{counter}}</p>
 
         <select v-model="city" @change="changeSelect">

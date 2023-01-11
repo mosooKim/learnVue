@@ -8,6 +8,7 @@ export default {
     components: {},
     data() {
         return {
+            //html data 바인딩
             htmlString: '<p style="color:red;">This is a red string.</p>'
         };
     },
