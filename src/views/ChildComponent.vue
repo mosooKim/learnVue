@@ -49,6 +49,7 @@ export default {
             alert('부모 컴포넌트에서 직접 발생시킨 이벤트');
         },
         sendFromChild() {
+            //자식 컴포넌트에서 부모 컴포넌트로 이벤트, 데이터 전달하기
             // this.$emit('send-message', this.msg);
             this.msg = '자식 컴포넌트에서 데이터 변경이 일어났습니다.'
         }
